@@ -1,0 +1,155 @@
+.main-content {
+    position: relative;
+}
+
+.gallery-container {
+    position: relative;
+    background: #333;
+}
+
+.gallery-container .slick-slide {
+    position: relative;
+    display: flex;
+    height: auto;
+    justify-content: center;
+}
+
+.gallery-container .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0;
+    width: 30px;
+    height: 50px;
+    z-index: 10;
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-image: url('../img/icons/arrow.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: .7;
+    transition: ease all .8s;
+}
+
+.gallery-container .slick-arrow:hover,
+.gallery-container .slick-arrow:active {
+    opacity: 1;
+}
+
+.gallery-container .slick-prev {
+    left: 0;
+}
+
+.gallery-container .slick-next {
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.gallery-featured .slick-slide {
+    cursor: w-resize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-featured .slick-slide .image {
+    background-size: contain;
+}
+
+.gallery-thumbnails {
+    box-shadow: 0 -1px rgba(0,0,0,0.2);
+}
+
+.gallery-thumbnails .slick-slide {
+    display: flex;
+    height: 100px;
+    overflow: hidden;
+    align-items: center;
+    cursor: pointer;
+    transition: ease all .8s;
+}
+
+.gallery-thumbnails .slick-slide:not(.slick-current) {
+    opacity: .3;
+}
+
+.gallery-container .slick-slide .image {
+    flex: 0 0 100%;
+    height: 100%;
+    width: 100%;
+}
+
+/***/
+
+.gallery-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out all .8s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.gallery-loading.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.spinner {
+  width: 70px;
+  text-align: center;
+}
+
+.spinner-wapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #009688;
+    text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #009688;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}

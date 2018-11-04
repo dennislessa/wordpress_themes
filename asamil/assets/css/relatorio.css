@@ -1,0 +1,64 @@
+.relatorio-ano {
+	display: block;
+	width: 100%;
+	font-size: 1.3rem;
+	line-height: 1.4;
+	cursor: pointer;
+	position: sticky;
+    padding: 5px 0 5px 30px;
+}
+
+.relatorio-ano.open {
+    top: 60px;
+    background: #fff;
+}
+
+.relatorio-ano:before,
+.relatorio-ano:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 12px;
+	height: 2px;
+	background: #000;
+	left: 9px;
+	top: 48%;
+	transform: translateY(-50%);
+}
+
+.relatorio-ano:after {
+	transform: translateY(-50%) rotate(90deg);
+}
+
+.relatorio-ano.open:after {
+	transform: translateY(-50%) rotate(0deg);
+}
+
+.relatorios {
+	margin-left: 2rem;
+	display: none;
+}
+
+.relatorios > li + li {
+	margin-top: 10px;
+}
+
+.relatorio-ano.open + .relatorios {
+	display: block;
+}
+
+.relatorio-link {
+	display: block;
+	color: #009688;
+	font-size: 13px;
+	padding: 5px 0;
+}
+
+.relatorio-link > .relatorio-descricao {
+	color: #555;
+	font-size: 0.975em;
+}
+
+.relatorio-link:hover {
+	text-decoration: underline;
+}

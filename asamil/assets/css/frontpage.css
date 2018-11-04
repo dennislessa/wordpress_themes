@@ -1,0 +1,222 @@
+.texto-destacado {
+    padding: 20px 0;
+}
+
+.texto-destacado p {
+    font-size: 2.8rem;
+    font-family: 'Pristina', sans-serif;
+    text-align: center;
+    width: 100%;
+    flex: 0 0 100%;
+    letter-spacing: 7px;
+    line-height: 1.7;
+}
+
+/*******************************************************************************
+ # Banner
+*******************************************************************************/
+.banner,
+.banner .slick-slide,
+.banner-wrapper > .banner-content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-wrapper {
+    width: 90%;
+}
+
+.banner .slick-arrow,
+.banner .banner-title,
+.banner .banner-supertitle {
+    transition-delay: 0s;
+    -webkit-transition: ease all .4s;
+       -moz-transition: ease all .4s;
+            transition: ease all .4s;
+}
+
+.banner .slick-slide ,
+.banner .slick-arrow {
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.banner .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: inline-block;
+    border: none;
+    background: transparent;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-image: url('../img/icons/arrow.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.banner .slick-arrow:hover {
+    opacity: 1;
+}
+
+.banner .slick-prev {
+    left: 0;
+}
+
+.banner .slick-next {
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.banner .slick-slide {
+    background-size: cover;
+    align-items: center;
+    justify-content: space-between;
+    height: 540px;
+}
+
+.banner-wrapper > .banner-content {
+    width: 80%;
+    max-width: 680px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.banner .slick-slide:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.banner .banner-supertitle {
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: .8;
+}
+
+.banner .btn,
+.banner .banner-title,
+.banner .banner-supertitle {
+    opacity: 1;
+    visibility: visible;
+}
+
+.banner-desktop .banner-supertitle,
+.banner-desktop .banner-title {
+    color: #fff;
+}
+
+.banner-desktop .banner-supertitle {
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+}
+
+.banner-desktop .banner-title {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin: 0 0 15px;
+}
+
+/*******************************************************************************
+ # Galeria
+*******************************************************************************/
+.gallery .card-half {
+    height: 360px;
+}
+
+.gallery iframe {
+    max-width: 100%;
+}
+
+.gallery iframe,
+.gallery-grid,
+.gallery-item,
+.gallery-item:before,
+.gallery-button-wrapper {
+    width: 100%;
+}
+
+.gallery-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.gallery iframe,
+.gallery-grid,
+.gallery-item,
+.gallery-item:before {
+    height: 100%;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(8,12.5%);
+}
+
+.gallery-item {
+    display: block;
+    position: relative;
+    background: #888;
+    border: 1px solid #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery-item:hover > .view-image {
+    opacity: 1;
+    visibility: visible;
+    background: rgba(0,0,0,0.5);
+}
+
+.gallery-item:hover > .player {
+    background: rgba(0,0,0,0.5);
+}
+
+/*******************************************************************************
+ # Responsive
+*******************************************************************************/
+@media (max-width: 1019px) {
+    .banner-tablet .banner-title {
+        font-size: 2.6rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .texto-destacado p {
+        font-size: 1.8rem;
+        letter-spacing: 5px;
+    }
+    
+    .banner-mobile .banner-wrapper {
+        width: 80%;
+    }
+    
+    .banner-mobile .banner-wrapper > .banner-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .banner-mobile .banner-supertitle {
+        font-size: 0.6rem;
+    }
+
+    .banner-mobile .banner-title {
+        font-size: 1.6rem;
+    }
+
+    .gallery .card-half + .card-half {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,18 @@
+.contato .nf-after-form-content,
+.contato .nf-form-fields-required,
+.contato .nf-field-label label {
+    display: none;
+}
+
+.contato .nf-after-field .nf-error-msg {
+    font-size: 0.7rem;
+}
+
+@media (max-width: 767px) {
+    .contato .btn-secondary,
+    .contato input[type="submit"].btn-secondary,
+    .contato input[type="reset"].btn-secondary,
+    .contato input[type="button"].btn-secondary {
+        width: 100%;
+    }
+}

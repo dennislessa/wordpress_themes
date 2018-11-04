@@ -1,0 +1,43 @@
+.search-result {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+}
+
+.search-result:hover {
+    text-decoration: underline;
+}
+
+.search-result + .search-result {
+    margin-top: 3%;
+}
+
+.search-result .search-title {
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.search-result .search-link {
+    font-size: .8rem;
+}
+
+.search-result .search-date,
+.search-result .search-link,
+.search-result .search-excerpt p {
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+.search-result .search-date > i {
+    margin-right: 5px;
+    font-size: 0.8rem;
+}
+
+.search-result .search-link {
+    color: #009688;
+}
+
+.search-result .search-date,
+.search-result .search-excerpt {
+    color: #444;
+}
