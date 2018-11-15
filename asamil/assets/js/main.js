@@ -49,5 +49,7 @@
         $('.relatorio-ano').click(function(){
             $(this).toggleClass('open');
         });
+        
+        $('.contact-col-half .contact-cover').css('top', $('.main-header').height());
     });
 })(jQuery);

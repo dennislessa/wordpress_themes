@@ -22,7 +22,7 @@
                         </div>
 
                         <div class="card-half card-half-social-medias">
-                            <p class="card-title aligncenter">ASAMIL nas redes sociais</p>
+                            <p class="card-title aligncenter">Sigan-nos nas redes sociais</p>
                             
                             <div class="social-medias">
                                 <a href="<?php data_site('facebook'); ?>" class="social-media" target="_blank">

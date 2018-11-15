@@ -19,12 +19,6 @@ Version: 2.0.0
     background: #009688;
 }
 
-@font-face {
-    font-family: 'Pristina';
-    font-weight: normal;
-    src: url('./assets/font/Pristina.ttf');
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -228,7 +222,7 @@ textarea {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 95%;
-    max-width: 1280px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -980,17 +974,17 @@ body.menu-open .menu-mobile > .menu {
 }
 
 .parceiros a {
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 .parceiros > .wrapper {
     justify-content: center;
     align-items: center;
-    min-height: 150px;
+    min-height: 80px;
 }
 
 .parceiros-desktop img {
-    height: 40px;
+    height: 38px;
     filter: grayscale(100%);
     -webkit-transition: ease all .4s;
        -moz-transition: ease all .4s;
@@ -1252,13 +1246,14 @@ body.menu-open .menu-mobile > .menu {
     *******************************************************************************/
     .main-footer-mobile .card {
         height: auto;
+        flex-direction: column-reverse;
     }
     
     .main-footer-mobile .card-half {
         padding-top: 35px;
     }
     
-    .main-footer-mobile .card-half:last-of-type {
+    .main-footer-mobile .card-half:first-of-type {
         padding-bottom: 35px;
     }
 }
