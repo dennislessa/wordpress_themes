@@ -214,3 +214,23 @@ function categories_relatories() {
 	);
 }
 add_action( 'init', 'categories_relatories' );
+
+if ( !function_exists( 'get_youtube_videos_channel') ) {
+	function get_youtube_videos_channel( $channel_id, $split = null ) {
+		$youtube = file_get_contents('https://www.youtube.com/feeds/videos.xml?channel_id=' . $channel_id);
+		$xml 	 = simplexml_load_string($youtube, "SimpleXMLElement", LIBXML_NOCDATA);
+		$json 	 = json_encode($xml);
+		$youtube = json_decode($json, true);
+        
+		if ( is_array( $youtube ) && (count( $youtube ) > 1) ) {
+			if ( !is_null( $split ) && is_numeric( $split ) )
+				$youtube = array_chunk( $youtube['entry'], $split, true )[0];
+			else
+				$youtube = $youtube['entry'];
+
+			return $youtube;
+		}
+
+		return null;
+	}
+}

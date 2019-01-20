@@ -22,7 +22,7 @@
                         </div>
 
                         <div class="card-half card-half-social-medias">
-                            <p class="card-title aligncenter">Sigan-nos nas redes sociais</p>
+                            <p class="card-title aligncenter">Siga-nos nas Redes Sociais</p>
                             
                             <div class="social-medias">
                                 <a href="<?php data_site('facebook'); ?>" class="social-media" target="_blank">
@@ -50,7 +50,7 @@
                 <div class="wrapper">
                     <p>Asamil &copy; <?php echo date('Y'); ?> Todos os direitos reservados.</p>
                     <p>
-                        <a href="<?php bloginfo('url'); ?>/mapa-do-site">Mapa do site</a> | <a href="<?php bloginfo('url'); ?>/politica-de-privacidade">Política de privacidade</a> | <a href="https://webmail-seguro.com.br/asamil.org/" target="_blank">Webmail</a> | <a href="<?php bloginfo('url'); ?>/wp-admin">Área restrita</a>
+                        <a href="<?php bloginfo('url'); ?>/mapa-do-site">Mapa do site</a> <span class="pipe"></span> <a href="<?php bloginfo('url'); ?>/politica-de-privacidade">Política de privacidade</a> <span class="pipe"></span> <a href="https://webmail-seguro.com.br/asamil.org/" target="_blank">Webmail</a> <span class="pipe"></span> <a href="<?php bloginfo('url'); ?>/wp-admin">Área restrita</a>
                     </p>
                 </div>
             </div>

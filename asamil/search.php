@@ -2,7 +2,7 @@
 <main class="content main-content main-content-desktop main-content-tablet main-content-mobile">
     <div class="article-header">
         <div class="wrapper">
-            <h2 class="article-title">Search</h2>
+            <h2 class="article-title">Pesquisa</h2>
         </div>
     </div>
     
@@ -16,7 +16,6 @@
                         <strong class="search-title"><?php the_title(); ?></strong>
                         <p class="search-link"><?php the_permalink(); ?></p>
                         <div class="search-excerpt"><?php the_excerpt(); ?></div>
-                        <p class="search-date"><i class="far fa-calendar-alt"></i><?php echo get_the_date('d/m/Y'); ?></p>
                     </a>
                     <?php 
                 endwhile;

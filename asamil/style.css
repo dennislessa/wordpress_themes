@@ -966,6 +966,12 @@ body.menu-open .menu-mobile > .menu {
     margin-top: 60px;
 }
 
+.pipe:before {
+    content: "|";
+    display: inline-block;
+    margin: 0 10px;
+}
+
 /*******************************************************************************
  # Footer
 *******************************************************************************/
@@ -974,7 +980,7 @@ body.menu-open .menu-mobile > .menu {
 }
 
 .parceiros a {
-    padding: 10px;
+    padding: 10px 26px;
 }
 
 .parceiros > .wrapper {
@@ -984,7 +990,7 @@ body.menu-open .menu-mobile > .menu {
 }
 
 .parceiros-desktop img {
-    height: 38px;
+    height: 32px;
     filter: grayscale(100%);
     -webkit-transition: ease all .4s;
        -moz-transition: ease all .4s;
